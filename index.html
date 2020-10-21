@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>infinitemonitor</title>
+	<style>
+		body {
+			margin: 0px;
+			font-family: system-ui;
+			background-color: #050719;
+			white-space: nowrap;
+		}
+		div {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		h2 {
+			color: white;
+			font-weight: lighter;
+			-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
+		}
+		a {
+			color: white;
+			font-weight: lighter;
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%, 0%);
+		}
+		p {
+			color: white;
+			font-weight: lighter;
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%, -100%);
+		}
+		h1 {
+			color: #050719;
+			margin-top: 0px;
+			margin-left: 5px;
+			font-weight: lighter;
+		}
+	</style>
+</head>
+<body>
+	<div id="div">
+		<h2 id="text">infinitemonitor</h2>
+		<p>trying to learn how html/css works</p>
+		<br>
+		<p>Projects:</p>
+		<br>
+		<a href="https://github.com/infinitemonitor/user-simulator" title="Configurable Discord chatbot that learns from users">User Simulator</a>
+	</div>
+	<h1 id="number"></h1>
+	<script>
+		i=0
+		text = document.getElementById("text")
+		num = document.getElementById("number")
+		
+		text.addEventListener("click", () => {
+			i++
+			num.innerHTML = i
+			num.style.cssText = "color: white; font-size: 48px;"
+		})
+	</script>
+</body>
