@@ -9,23 +9,24 @@
 			background-color: #050719;
 			white-space: nowrap;
 		}
-		div {
+		#div {
 			position: absolute;
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
 		}
-		h2 {
+		.name {
 			color: white;
 			font-weight: lighter;
 			-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
 		}
-		a {
+		.link {
 			color: white;
 			font-weight: lighter;
 			position: absolute;
 			left: 50%;
 			transform: translate(-50%, 0%);
+			text-decoration: underline dotted;
 		}
 		p {
 			color: white;
@@ -34,26 +35,31 @@
 			left: 50%;
 			transform: translate(-50%, -100%);
 		}
-		h1 {
+		.number {
 			color: #050719;
 			margin-top: 0px;
 			margin-left: 5px;
 			font-weight: lighter;
 		}
+		a:hover {
+			text-shadow: 0px 0px 3px #ffffff;
+		}
 	</style>
 </head>
 <body>
 	<div id="div">
-		<h2 id="text">infinitemonitor</h2>
-		<p>slowly getting better at html/css</p>
+		<h2 id="text" class="name">infinitemonitor</h2>
+		<p>trying to learn how html/css works</p>
 		<br>
 		<p>Projects:</p>
 		<br>
-		<a href="https://github.com/infinitemonitor/user-simulator" title="Configurable Discord chatbot that learns from users">User Simulator</a>
+		<a class="link" href="https://github.com/infinitemonitor/user-simulator" title="Configurable Discord chatbot that learns from users">User Simulator</a>
 		<br>
-		<a href="https://infinitemonitor.github.io/incremental-speed" title="Basic incremental game about distance and speed">Incremental Speed</a>
+		<a class="link" href="https://infinitemonitor.github.io/incremental-speed" title="Basic incremental game about distance and speed">Incremental Speed</a>
+		<br>
+		<a class="link" href="https://github.com/infinitemonitor/emoticore" title="Discord bot for emote usage tracking and management">Emoticore</a>
 	</div>
-	<h1 id="number"></h1>
+	<h1 id="number" class="number"></h1>
 	<script>
 		i=0
 		text = document.getElementById("text")
